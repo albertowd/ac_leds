@@ -1,0 +1,5 @@
+[FORMAT]
+max-line-length=240
+
+[MESSAGES CONTROL]
+disable=broad-exception-caught,too-many-instance-attributes,wrong-import-position

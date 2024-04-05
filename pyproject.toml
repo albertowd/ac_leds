@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+authors = [
+    { email = "alberto+git@albertowd.dev", name = "Alberto Wollmann Dietrich" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: Windows | OSX",
+]
+description = "A tool to use Aura keyboards as rev and shift light!"
+dependencies = ["requests"]
+keywords = ["assetto", "ac", "asus", "aura", "corsa", "engine", "leds", "lights", "msi", "mystic", "rog", "steel"]
+name = "ac_leds"
+readme = "README.md"
+requires-python = ">=3.4"
+version = "1.0.0"
