@@ -15,5 +15,5 @@ dependencies = ["requests"]
 keywords = ["assetto", "ac", "asus", "aura", "corsa", "engine", "leds", "lights", "msi", "mystic", "rog", "steel"]
 name = "ac_leds"
 readme = "README.md"
-requires-python = ">=3.4"
+requires-python = ">=3.7"
 version = "1.0.0"
