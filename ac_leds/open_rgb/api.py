@@ -84,6 +84,6 @@ class OpenRGBAPI:
                 self.__client.update()
                 self.__keyboards = [device for device in self.__client.ee_devices if device.type == DeviceType.KEYBOARD]
                 for keyboard in self.__keyboards:
-                    print(f"Keybaord {keyboard.name} leds: {[led for led in keyboard.leds]} zones: {[zone.name for zone in keyboard.zones]}")
+                    print(f"Keybaord {keyboard.name} leds: {keyboard.leds} zones: {[zone.name for zone in keyboard.zones]}")
             except Exception as exp:
                 print(exp)

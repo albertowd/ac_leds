@@ -59,15 +59,15 @@ class RevBar(Gauge):
 
     def __init__(self) -> None:
         super().__init__()
-        self.__current_rpm = 1.0
-        self.__max_rpm = self.__current_rpm
+        self.__current_rpm: float = 1.0
+        self.__max_rpm: float = self.__current_rpm
 
     def get_colors(self) -> [(RGBColor, [str])]:
         '''
         Calculate the colors and zones of the gauge at current value.
         '''
-        rpm_perc = self.__current_rpm / self.__max_rpm
-        filter_lights = int(rpm_perc * 11.0)
+        rpm_perc: float = self.__current_rpm / self.__max_rpm
+        filter_lights: int = int(rpm_perc * 11.0)
         return [(color, [RevBar.KEYS[index]]) for index, color in enumerate(RevBar.GRB)] + [(BLACK, RevBar.KEYS[filter_lights + 1:])]
 
     def update(self, car_info: CarInfo) -> None:

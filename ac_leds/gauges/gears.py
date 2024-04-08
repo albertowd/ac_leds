@@ -27,7 +27,7 @@ class Gears(Gauge):
 
     def __init__(self) -> None:
         super().__init__()
-        self.__gear = 1
+        self.__gear: int = 1
 
     def get_colors(self) -> [(RGBColor, [str])]:
         '''
