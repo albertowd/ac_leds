@@ -54,6 +54,7 @@ if __name__ == '__main__':
             api.disconnect()
     except Exception as e:
         print(e)
+
     try:
         if telemetry.is_connected():
             telemetry.disconnect()

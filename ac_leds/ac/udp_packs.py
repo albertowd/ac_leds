@@ -27,7 +27,7 @@ class Handshake:
     '''
     Handshake structure.
     '''
-    FORMAT = '<iii'
+    FORMAT = '<3i'
     SIZE = calcsize(FORMAT)
 
     def __init__(self, identifier: IdentifierID, operation_id: OperationID, version: int = 1) -> None:
@@ -48,7 +48,7 @@ class HandshakeResponse:
     '''
     Handshake response structure.
     '''
-    FORMAT: str = '<100s100sii100s100s'
+    FORMAT: str = '<100s100s2i100s100s'
     SIZE: int = calcsize(FORMAT)
 
     def __init__(self, data: bytes) -> None:
@@ -82,7 +82,7 @@ class CarInfo:
     '''
     Car info update structure.
     '''
-    FORMAT: str = '<4sifff??????2sfffiiiifffffiffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+    FORMAT: str = '<4si3f6?2s3f4i5fi62f'
     SIZE: int = calcsize(FORMAT)
 
     def __init__(self, data: bytes) -> None:
