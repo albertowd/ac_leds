@@ -5,7 +5,7 @@ install:
     pip install -r requirements.txt
 
 lint:
-    pylint ./ac_aura/ --disable=W0718
+    pylint ./ac_leds/ --disable=W0718
     pylint ./tests/ --disable=W0718,C413
 
 package:
@@ -13,5 +13,5 @@ package:
 
 test:
     python tests/test_ac_udp_telemetry.py
-    python tests/test_aura_api.py
-    python tests/test_aura_bgr_color.py
+    python tests/test_leds_api.py
+    python tests/test_leds_bgr_color.py
